@@ -3,7 +3,7 @@ import sys
 from textblob import TextBlob
 doc = docx.Document('Naveen_Senior-Trainer_Profile.docx')
 lst=[]
-tg=[]
+
 for para in doc.paragraphs:
 	print(para.text)
 	blob=TextBlob(para.text)
